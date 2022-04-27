@@ -1,0 +1,97 @@
+$dark: #181719;
+$light: white;
+$font1: "Lora", serif;
+$font2: "Montserrat";
+$font3: "Crimson Pro", serif;
+
+*,
+body,
+html {
+  background-color: $dark;
+  color: $light;
+}
+
+.navbar-brand {
+  border: 1px solid $light;
+  padding: 5px;
+  font-family: $font3;
+}
+.space {
+  height: 220px;
+}
+
+.hero {
+  h1 {
+    font-family: $font1;
+    font-weight: bold;
+    size: 48px;
+  }
+  p {
+    font-family: $font2;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  button {
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-family: $font2;
+  }
+}
+
+.card {
+  background-color: $dark;
+  width: 500px;
+  filter: drop-shadow(5px 5px 2px #f1f1f3);
+  offset: 0px, 4px;
+  position: absolute;
+  right: 130px;
+  top: 650px;
+  padding: 30px;
+  border-radius: 17px;
+  h1 {
+    font-family: $font1;
+    font-weight: bold;
+    size: 24px;
+  }
+}
+
+footer{
+  margin-top: 150px;
+}
+//media querys
+
+@media only screen and (max-width: 600px) {
+
+  .space{
+    display: none;
+  }
+  h1{
+    margin-top: 50px;
+  }
+  .hero p{
+    font-size: 3.5vw;
+    text-align: left;
+  }
+  .hero img{
+    width:350px;
+    margin-top: 20px;
+    position: relative;
+    right: 90px;
+  }
+
+  .profile .card{
+    width:300px;
+    height: 200px;
+    position: absolute;
+    right: 50px;
+  }
+
+  .profile h1, p{
+    font-size: 11px;
+  }
+
+  footer{
+    margin-top: 90px;
+  }
+}
